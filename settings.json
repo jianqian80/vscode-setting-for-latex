@@ -1,0 +1,140 @@
+{
+    // "latex-workshop.view.pdf.hand": true, 
+    // "env": {
+        // "TEXMFHOME": "/Library/TeX/texbin"
+    // },
+    "python.linting.pylintArgs": [
+        "--generated-members"
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.message.badbox.show": false,
+    "editor.wordWrap": "on",
+    "python.pythonPath": "/Users/qianjian/myenvs/mypy/bin/python",
+    "python.venvPath": "~/myenvs",
+    "editor.fontSize": 20,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "/usr/local/bin/displayline",
+        "args": [
+            "-r",
+            "%LINE%",
+            "%PDF%",
+            "%TEX%"
+        ]
+    },
+    "latex-workshop.view.pdf.external.command": {
+        "command": "/usr/local/bin/displayline",
+        "args": [
+            "0",
+            "%PDF%"
+        ]
+    },
+    "latex-workshop.latex.recipes": [
+        {
+        "name": "xelatex -> bibtex -> xelatex*2",
+        "tools": [
+            "xelatex",
+            "bibtex",
+            "xelatex",
+            "xelatex"
+        ]
+        },
+        {
+        "name": "pdflatex -> bibtex -> pdflatex*2",
+        "tools": [
+            "pdflatex",
+            "bibtex",
+            "pdflatex",
+            "pdflatex"
+        ]
+        },
+        {
+        "name": "xelatex",
+        "tools": [
+            "xelatex"
+        ]
+        }, 
+        {
+        "name": "latexmk",
+        "tools": [
+            "latexmk"
+        ]
+        }  
+    ],
+        
+    "latex-workshop.latex.tools": [
+        {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+        ]
+        // "env": {"%DOC%/Library/TeX/"}
+        }, 
+        {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+        }, 
+        {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+        }, 
+        {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+        }
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk"
+    ],
+    "sync.gist": "5db0c12cab758c43ab233948766c4b92",
+    "terminal.integrated.fontSize": 20,
+    "debug.console.fontSize": 20,
+    "editor.largeFileOptimizations": false,
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "/Users/qianjian/.leetcode",
+    "workbench.editorAssociations": [
+        {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+        }
+    ],
+}

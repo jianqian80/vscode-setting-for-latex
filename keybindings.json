@@ -1,0 +1,50 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+b",
+        "command": "latex-workshop.build",
+        "when": "resourceExtname == .tex && !config.latex-workshop.bind.altKeymap.enabled"
+    },
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.tasks.build",
+        "when": "resourceExtname != .tex && resourceExtname == .py"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-latex-workshop.build",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "latex-workshop.recipes"
+    },
+    {
+        "key": "cmd+b",
+        "command": "python.execInTerminal",
+        "when": "resourceExtname == .py"
+    },
+    {
+        "key": "cmd+b",
+        "command": "code-runner.run",
+        "when": "resourceExtname == .go"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+     },
+     {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    }
+]
